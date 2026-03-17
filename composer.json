@@ -1,0 +1,30 @@
+{
+    "name": "jamal1973/domain-login",
+    "description": "Reusable Laravel domain / LDAP login screen and authentication package.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jamal1973"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "directorytree/ldaprecord-laravel": "^3.4",
+        "laravel/framework": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jamal1973\\DomainLogin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jamal1973\\DomainLogin\\DomainLoginServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
